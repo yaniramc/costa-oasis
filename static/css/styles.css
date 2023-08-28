@@ -264,10 +264,8 @@ footer {
         background-image: url("../img/background3.png");
         background-repeat: no-repeat;
         background-position: left;
-        height: 600px;
         width: auto;
         background-size: 1150px;
-        z-index: -2;
     }
 }
 
