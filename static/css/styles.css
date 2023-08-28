@@ -207,6 +207,13 @@ h5 {
 
 
 
+
+/* Seccion del menú */
+.title-portada-when-small {
+    padding-left: 100px;
+}
+
+
 footer {
     background-color: #072F54;
     color: white;
@@ -277,10 +284,6 @@ footer {
     }
 }
 
-
-@media screen and (max-width: 386px) {
-
-}
 
 
 
