@@ -1,0 +1,315 @@
+/* Colores página */
+.c-primary-blue {
+    color: #072F54;
+}
+
+.c-secondary-yellow {
+    color: #DFC24A;
+}
+
+
+/* Fuente de la página */
+body {
+    font-family: sans-serif;
+}
+
+
+.logo {
+    width: 50%;
+}
+
+
+/* Navbar */
+.bg-nav-link {
+    color: #072F54;
+}
+
+.bg-nav-link:hover {
+    background-color: #DFC24A;
+    color: #072F54;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+
+/* Efecto circulo irregular */
+.irregular-circle-effect {
+    border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
+    width: auto;
+}
+
+.irregular-circle-effect-2 {
+    border-radius: 40% 50% 30% 90% / 55% 43% 25% 67%;
+}
+
+
+/* Colores de tamaños de letras */
+h1, h2, h3, h4, h5, h6 {
+    color: #072F54;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+
+.banner {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Colores de los Botones */
+.btn-primary-color {
+    font-family: 'Oswald', sans-serif;
+    background-color: #072F54;
+    color: white;
+    box-shadow: 0 4px 15px 0 rgba(189, 186, 177);
+}
+
+.btn-primary-color:hover {
+    background-color: #11487C;
+    color: white;
+}
+
+.btn-secondary-color {
+    font-family: 'Oswald', sans-serif;
+    background-color: #DFC24A;
+    color: #072F54;
+    box-shadow: 0 4px 15px 0 rgba(189, 186, 177);
+}
+
+.btn-secondary-color:hover {
+    background-color: #FBD73F;
+    color: #072F54;
+}
+
+
+/* Posicionar forma SVG dentras de texto o título */
+.how-it-works {
+    position: relative;
+}
+
+.position-svg {
+    position: relative;
+}
+
+.background-svg {
+    position: absolute;
+    z-index: -1; /* Por detrás del texto */
+    top: 35px;
+    left: -5px;
+    fill: #C8AA30;
+}
+
+.foreground-text {
+    position: absolute;
+    z-index: 2; /* Por delante del SVG */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Cards Servicios */
+.card:hover {
+    box-shadow: 0 4px 15px 0 rgba(189, 186, 177);
+}
+
+.card-img {
+    border-radius: 0 0 50% 50% / 90% 50% 30% 25%;
+}
+
+
+/* Configurando la altura de cada secciones */
+.our-services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.counter-section {
+    background-image: url("../img/background2.png");
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+
+/* Sección Contador */
+.contador-seccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em 0;
+    background-color: #f4f4f4;
+    color: #072F54;
+    border-radius: 20px;
+    box-shadow: 0 4px 25px 0 rgba(189, 186, 177);
+}
+
+.item-contador {
+    text-align: center;
+    font-size: 1.5em;
+    flex: 1; /* Permitir que los elementos crezcan y ocupen el espacio disponible */
+    margin: 0.5em;
+}
+
+.numero {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #072F54;
+}
+
+
+/* Backgrounds de la forma curva */
+.background-forma-curva-derecha {
+    padding-top: 260px;
+    padding-bottom: 100px;
+    background-image: url("../img/forma-curva.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1000px;
+    z-index: -2;
+}
+
+.contact {
+    background-image: url("../img/background3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1150px;
+    z-index: -2;
+}
+
+
+
+
+footer {
+    background-color: #072F54;
+    color: white;
+    padding: 50px;
+}
+
+
+
+
+
+/* Media queries screen */
+@media screen and (max-width: 1400px) {
+    .banner {
+        background-image: url("../img/background.png");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    .banner-portada > img {
+        display: none;
+    }
+
+    .our-services {
+        padding: 50px;
+    }
+
+    .how-it-works {
+        padding: 50px;
+    }
+
+    .counter-section {
+        padding: 50px;
+    }
+
+    .contact {
+        padding: 50px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .banner-text {
+        font-size: 70px;
+    }
+
+    .item-contador {
+        flex-basis: 100%; /* Hacer que cada elemento ocupe el 100% del ancho en pantallas pequeñas */
+        margin: 1em 0;
+    }
+
+    .numero {
+        font-size: 1.5em; /* Reducir un poco el tamaño de la fuente en dispositivos móviles */
+    }
+
+    .contact {
+        background-image: url("../img/background3.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 600px;
+        width: auto;
+        background-size: 1150px;
+        z-index: -2;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .logo {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
